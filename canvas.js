@@ -3,7 +3,7 @@ let ctx = canvas.getContext('2d')
 
 let cameraOffset = { x: window.innerWidth/2, y: window.innerHeight/2 }
 let cameraZoom = 1
-let MAX_ZOOM = 2.5
+let MAX_ZOOM = 5
 let MIN_ZOOM = 0.1
 let SCROLL_SENSITIVITY = 0.001
 
@@ -24,24 +24,7 @@ function draw()
     img.src = './asset.svg'
     ctx.drawImage(img, -342/2, -134/2, 342, 134)
 
-    // ctx.fillStyle = "#991111"
-    // drawRect(-50,-50,100,100)
-
-    // ctx.fillStyle = "#eecc77"
-    // drawRect(-35,-35,20,20)
-    // drawRect(15,-35,20,20)
-    // drawRect(-35,15,70,20)
-
     // ctx.fillStyle = "#fff"
-    // drawText("Simple Pan and Zoom Canvas", -255, -100, 32, "courier")
-
-    // ctx.rotate(-31*Math.PI / 180)
-    // ctx.fillStyle = `#${(Math.round(Date.now()/40)%4096).toString(16)}`
-    // drawText("Now with touch!", -110, 100, 32, "courier")
-
-    // ctx.fillStyle = "#fff"
-    // ctx.rotate(31*Math.PI / 180)
-
     // drawText("Wow, you found me!", -260, -2000, 48, "courier")
 
     requestAnimationFrame( draw )
